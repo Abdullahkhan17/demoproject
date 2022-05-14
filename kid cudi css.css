@@ -1,0 +1,32 @@
+*{
+	box-sizing:"border-box";
+	font-family: cursive;
+	color:#777;
+}
+a:hover{
+	color: lightgrey; 
+	border:5px lightgrey;
+	box-shadow: purple 10px 10px 10px orangered;
+		color: purple;
+		width: 100px;
+		} 
+
+		.main-nav{
+			position: static;
+			bottom: 5px;
+		}
+
+		.main-header{
+			background-color:rgba(0, 0, 0, -0.2) ;
+			background-image:url("clouds.jpg") ;
+			background-size: cover;
+			background-blend-mode: multiply;
+			padding-bottom:30px ; 
+			position: sticky;
+			top: 0px;
+
+				
+		}
+li{
+	display: inline;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title> 
+	<script defer src = "form.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+function validateform(){
+    var name = document.myform.name.value;
+    var password = document.myform.password.value; 
+    if(name==null || name==""){
+        alert("Name Property Cannot Be Left Blank");
+        return false; }
+        else{
+            alert(sucsess)
+        
+    }
+    if(password.length>=6);{
+        alert("Password Must Be Over 6 Characters");
+        return false;
+    }
+        
+}		
+	</script> 
+	<div id="error"></div>
+<form  id="myform">
+	<br> 
+	<label>Name:</label>
+	<input type="name" name="name" placeholder="Username" id="username" "  > 
+	<br>
+	<label id="email" >Email:</label>
+	<input type="email" name="email"placeholder="Exampl@example.com" id="email">
+	<br>
+	<label id="gender">Gender:</label>
+	<label type= "radio">Male</label>
+	<input type="radio" name="Gender">
+	<label type="radio">Female</label>
+	<input type="radio" name="Gender">
+	<label type="radio">Other</label>
+	<input type="radio" name="Gender">
+	<br>
+<label id="education">Education:</label>
+<label>Highschool</label>
+<input type="checkbox" name="Education"> 
+College</label>
+<input type="checkbox" name="Education">
+University</label>
+<input type="checkbox" name="Education">
+<label>Other</label>
+<input type="checkbox" name="Education"> 
+	<br>
+	<label for="it trainning">IT trainning</label>
+<select Name="it trainning" value="it trainning"> 
+	<option value="frontend">Front end</option>
+	<option value="backend">Back end</option>
+	<option value="full stack">Full stack</option>
+</select>
+	<br>
+<label>Bio</label>
+<input type="txtbox" name="txtbox" placeholder="Please write about yourself">
+	<br>
+<label for="date">Birthday:</label>
+	<input type="date" name="date" id="date">
+	<br>
+	<label>Password:</label> 
+	<input type="password" name="password" placeholder="Password" id="password" > 
+	<br>
+	<button type= "reset">Reset</button onreset=onreset(e)> 
+	<button type ="submit"> Submit</button onsubmit=onsubmit(e)>
+</form>
+</body>
+</html>
